@@ -4,15 +4,13 @@ function rot13(str) { // LBH QVQ VG!
   for (var i = 0; i < str.length; i++) {
    //console.log(str[i].charCodeAt(str[i]));
     if(str[i].charCodeAt(str[i])>=65 && str[i].charCodeAt(str[i])<=77 ){
-      withoutCode = str[i].charCodeAt(str[i])+13;
+         withoutCode = str[i].charCodeAt(str[i])+13;
     }
     else if(str[i].charCodeAt(str[i])>77 && str[i].charCodeAt(str[i])<=90 ) {
-    withoutCode = str[i].charCodeAt(str[i])-13;
+         withoutCode = str[i].charCodeAt(str[i])-13;
     }
-    else{
-    withoutCode = str[i].charCodeAt(str[i]);
+    else withoutCode = str[i].charCodeAt(str[i]);
 
-    }
   decision +=  String.fromCharCode(withoutCode);
   }
   console.log(decision);
