@@ -6,36 +6,38 @@ steamrollArray([1, [2], [3, [[4]]]]) should return [1, 2, 3, 4].
 steamrollArray([1, [], [3, [[4]]]]) should return [1, 3, 4].
 steamrollArray([1, {}, [3, [[4]]]]) should return [1, {}, 3, 4]
 */
+
 function steamrollArray(arr) {
-  // I'm a steamroller, baby
-  console.log('arr ulazak u funkciju: ', arr);
   var newArr = [];
-  var i = 0;
-  for (; i < arr.length; i++) {
-    if (Array.isArray(arr[i]) == false) {
-      newArr.push(arr[i]);
-      console.log('arr[i] u prvom foru: ', arr[i]);
-      console.log('newArr u prvom foru ', newArr);
-    } else {
-      console.log('u elseu:------------------------------');
-      console.log('arr[i] prije drugog fora: ', arr[i]);
-      console.log('newArr prije drugog fora ', newArr);
+  var i;
+  for (i = 0; i < arr.length; i++) {
+    if (Array.isArray(arr[i]) === true) {
+      console.log('polje je: ', arr[i]);
       for (var j = 0; j < arr[i].length; j++) {
-        console.log('arr[i][j] u drugom foru: ', arr[i][j]);
-        newArr.push(arr[i][j]);
-        console.log('newArr nakon pusha: ', newArr);
-        console.log('arr nakon newArr pusha: ', arr);
-        if (Array.isArray(arr[i][j]) === true) {
-          steamrollArray(newArr);
+        console.log('u drugoj for petlji ', arr[i]);
+        if (Array.isArray(arr[i][j]) === false) {
+          console.log('u ifu u drugoj for petlji: ', arr[i][j]);
+          newArr.push(arr[i][j]);
+        } else {
+          for (var d = 0; d < arr[i][j].length; d++) {
+            console.log('treca for petlja: ', arr[i][j][d][0]);
+            newArr.push(arr[i][j][d][0]);
+          }
         }
-      };
+      }
+    } else {
+      newArr.push(arr[i]);
     }
+
+    console.log('newArr prilikom povecanja i: ', newArr);
   }
+
+  return newArr;
 }
 
-console.log(steamrollArray([1, [2], [3, [[4]]]]));
+console.log(
+  steamrollArray([1, {}, [3, [[4]]]])
+);
 
-//console.log('\n'),
-//console.log(steamrollArray([1, [], [3, [[4]]]]));
 //Other solution
 //https://forum.freecodecamp.org/t/freecodecamp-algorithm-challenge-guide-steamroller/16079
