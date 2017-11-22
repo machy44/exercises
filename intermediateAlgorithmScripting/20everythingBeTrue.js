@@ -6,13 +6,20 @@ truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "ma
 {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex") should return true.
 
 */
+ //|| isNaN(collection[i][pre])=== true
 
 function truthCheck(collection, pre) {
-  // Is everyone being true?
-  return pre;
+  var falsy = [false, 0, "", null, undefined, NaN];
+
+  for (var i in collection) {
+    if(falsy.indexOf(collection[i][pre]) > -1 ) return false;
+    if(Number.isNaN(collection[i][pre])) return false;
 }
-
-truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex");
-
+  // Is everyone being true?
+  return true;
+}
+console.log(
+ truthCheck([{"single": "double"}, {"single": NaN}], "single")
+);
 //OTHER solutions
 //https://forum.freecodecamp.org/t/freecodecamp-algorithm-challenge-guide-everything-be-true/16011
