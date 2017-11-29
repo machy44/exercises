@@ -17,9 +17,23 @@ addTogether(2)([3]) should return undefined.
 
 
 function addTogether() {
-  return false;
+  if(arguments.length<2) {
+    var x = (arguments[0]);
+      return function(y){
+        return x + y;
+      };
+  }
+  if(Number.isInteger(arguments[0]) === false|| Number.isInteger(arguments[1]) === false){
+    return undefined;
+  } else {
+    return arguments[0] + arguments[1];
+  }
+
 }
 
-addTogether(2,3);
+console.log(
+addTogether(2,3),
+addTogether(2)(3)
+);
 //OTHER solutions
 //https://forum.freecodecamp.org/t/freecodecamp-algorithm-challenge-guide-arguments-optional/14271

@@ -1,19 +1,18 @@
-function binaryAgent(str) {
-  console.log(str.split(" "));
-  var ajmo = str.split(" ")
-  console.log(typeof(ajmo));
-  Array.isArray(ajmo);
+this.x = 9;    // this refers to global "window" object here in the browser
+console.log(this);
+var module = {
+  x: 81,
+  getX: function() { return this.x; }
+};
 
-//return String.fromCharCode(str.split(" ").map(function(char){
-  ///    return parseInt(char, 2);
-   //}));
+module.getX(); // 81
 
-//  return String.fromCharCode(...str.split(" ").map(function(char){
-//      return parseInt(char, 2);
-//   }));
-}
+var retrieveX = module.getX;
+console.log(retrieveX());
+// returns 9 - The function gets invoked at the global scope
 
-// test here
-console.log(
-binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111")
-);
+// Create a new function with 'this' bound to module
+// New programmers might confuse the
+// global var x with module's property x
+var boundGetX = retrieveX.bind(module);
+boundGetX(); // 81
