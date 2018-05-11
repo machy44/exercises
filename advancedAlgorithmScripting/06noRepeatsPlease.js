@@ -6,10 +6,32 @@ For example, aab should return 2 because it has 6 total permutations (aab, aab, 
 but only 2 of them (aba and aba) don't have the same letter (in this case a) repeating.
 */
 function permAlone(str) {
-    return str;
+  var arr =str.split('');
+  var count = 0;
+  
+  function swap(a, b) {
+    var tmp = arr[a];
+    arr[a] =arr[b];
+    arr[b] = tmp;
   }
   
-  permAlone('aab');
+  function generate(n) {
+    var regex = /([a-z])\1+/;
+    if(n==1 && !regex.test(arr.join(''))){
+      count +=1;
+    } else {
+      for(var i=0; i!==n; i++) {
+        generate(n-1);
+        swap(n%2 ? 0 : i, n-1);
+      }
+    }
+  }
+  generate(arr.length);
+  return count;
+}
+
+console.log(
+permAlone('aab'));
 
   //other solutions
   //https://forum.freecodecamp.org/t/freecodecamp-algorithm-challenge-guide-no-repeats-please/16037
