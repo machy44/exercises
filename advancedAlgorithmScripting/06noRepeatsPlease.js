@@ -10,18 +10,24 @@ function permAlone(str) {
   var count = 0;
   
   function swap(a, b) {
+    console.log('in swap a and b', a, b);
     var tmp = arr[a];
     arr[a] =arr[b];
     arr[b] = tmp;
   }
   
-  function generate(n) {
+  function generate(n) {  
     var regex = /([a-z])\1+/;
     if(n==1 && !regex.test(arr.join(''))){
+      console.log('arr.join', arr.join(''));
       count +=1;
     } else {
       for(var i=0; i!==n; i++) {
+        console.log('i before recursion: ', i);
+        console.log('n before recursion: ', n);
         generate(n-1);
+        console.log('i after recursion: ', i);
+        console.log('n after recursion: ', n);
         swap(n%2 ? 0 : i, n-1);
       }
     }
