@@ -7,11 +7,12 @@
  */
 var hasAllCodes = function (s, k) {
   let elements = new Set();
+  let possibilities = Math.pow(2, k);
   for (var i = 0; i <= s.length - k; i++) {
     elements.add(s.substring(i, i + k));
   }
 
-  return elements.size === Math.pow(2, k);
+  return elements.size === possibilities;
 };
 
 console.log(hasAllCodes("00110110", 2));
