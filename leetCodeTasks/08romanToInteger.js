@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/roman-to-integer/
+
 const symbols = {
   I: 1,
   V: 5,
@@ -9,7 +11,7 @@ const symbols = {
 };
 
 const subtraction = (first, second) => {
-  if (second - first > 1 && second - first < 9) {
+  if (second - first > 1 && second - first < 10) {
     return second - 1;
   }
   if (second - first > 9 && second - first < 100) {
@@ -43,4 +45,5 @@ const romanToInt = function (s) {
 
 // console.log(romanToInt("III"));
 // console.log(romanToInt("LVIII"));
-console.log(romanToInt('MCMXCIV')); // 1994
+// console.log(romanToInt('MCMXCIV')); // 1994
+console.log(romanToInt('IX'));
