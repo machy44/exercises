@@ -15,7 +15,7 @@ var isValid = function (s) {
       continue;
     }
     const prevElement = stack[stack.length - 1];
-    if (pairs.includes(`${prevElement}${element}`)) {
+    if (validPairs.includes(`${prevElement}${element}`)) {
       stack.pop();
     } else {
       stack.push(element);
