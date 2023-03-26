@@ -12,9 +12,8 @@ var removeDuplicates = function (nums) {
     if (currentNumber === nums[i]) {
       continue;
     } else {
-      nums[firstPositionOfTheCurrentNumber + 1] = nums[i];
+      nums[++firstPositionOfTheCurrentNumber] = nums[i];
       currentNumber = nums[i];
-      firstPositionOfTheCurrentNumber = firstPositionOfTheCurrentNumber + 1;
     }
   }
 
