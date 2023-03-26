@@ -7,7 +7,6 @@
 var removeDuplicates = function (nums) {
   let currentNumber = nums[0];
   let firstPositionOfTheCurrentNumber = 0;
-  let k = 1;
 
   for (let i = 0; i < nums.length; i++) {
     if (currentNumber === nums[i]) {
@@ -16,10 +15,12 @@ var removeDuplicates = function (nums) {
       nums[firstPositionOfTheCurrentNumber + 1] = nums[i];
       currentNumber = nums[i];
       firstPositionOfTheCurrentNumber = firstPositionOfTheCurrentNumber + 1;
-      k++;
     }
   }
-  return k;
+
+  nums.splice(firstPositionOfTheCurrentNumber + 1, nums.length);
+
+  return firstPositionOfTheCurrentNumber + 1;
 };
 
 console.log(removeDuplicates([1, 1, 2])); // 2
