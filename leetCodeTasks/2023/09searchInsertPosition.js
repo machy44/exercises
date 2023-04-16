@@ -6,7 +6,7 @@
  * @param {number} target
  * @return {number}
  */
-// this works but take a look about binary search
+// this works but it is O(n) take a look about binary search
 var searchInsert = function (nums, target) {
   let insertIndex = nums.length;
   for (let i = 0; i < nums.length; i++) {
