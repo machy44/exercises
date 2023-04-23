@@ -19,6 +19,21 @@ var searchInsert = function (nums, target) {
   return insertIndex;
 };
 
-console.log(searchInsert([1, 3, 5, 6], 5)); // 2
-console.log(searchInsert([1, 3, 5, 6], 2)); // 1
-console.log(searchInsert([1, 3, 5, 6], 7)); // 4
+//binary search works only on already sorted array.
+var binarySearchInsert = (nums, target) => {
+  let low = 0;
+  let high = nums.length;
+  while (low < high) {
+    let mid = low + Math.floor((high - low) / 2); // always gives the lower mid
+    if (target > nums[mid]) {
+      low = mid + 1; // no way mid is a valid option
+    } else {
+      high = mid; // it might be possibe to inseart @ mid
+    }
+  }
+  return low;
+};
+
+// console.log(binarySearchInsert([1, 3, 5, 6], 5)); // 2
+// console.log(binarySearchInsert([1, 3, 5, 6], 2)); // 1
+console.log(binarySearchInsert([1, 3, 5, 6], 7)); // 4
