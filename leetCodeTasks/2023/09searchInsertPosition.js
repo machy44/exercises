@@ -19,7 +19,24 @@ var searchInsert = function (nums, target) {
   return insertIndex;
 };
 
-//binary search works only on already sorted array.
+function searchInsertRecursive(nums, target) {
+  return binarySearchRecursive(nums, target, 0, nums.length - 1);
+}
+
+function binarySearchRecursive(array, target, start, end) {
+  if (start > end) return start;
+
+  const midPoint = Math.floor((start + end) / 2);
+
+  if (array[midPoint] === target) return midPoint;
+
+  if (array[midPoint] > target)
+    return binarySearch(array, target, start, midPoint - 1);
+
+  if (array[midPoint] < target)
+    return binarySearch(array, target, midPoint + 1, end);
+}
+
 var binarySearchInsert = (nums, target) => {
   let low = 0;
   let high = nums.length;
