@@ -6,6 +6,10 @@ https://www.freecodecamp.org/
 
 https://leetcode.com/
 
-# some other pages
+# links
+
+https://www.bigocheatsheet.com/
+
+# some other pages with tasks
 
 https://neetcode.io/
