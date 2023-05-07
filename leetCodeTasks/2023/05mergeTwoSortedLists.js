@@ -20,6 +20,7 @@ class ListNode {
  * @return {ListNode}
  */
 
+// this is accepted solution but I dont like it. Take a look on other solutions
 var mergeTwoSortedLists = function (list1, list2) {
   let current1 = list1;
   let current2 = list2;
@@ -65,3 +66,8 @@ const list2 = new ListNode(2, new ListNode(3));
 // console.log(mergeTwoSortedLists(new ListNode(), new ListNode(0)));
 // console.log(mergeTwoSortedLists([], [0]));
 console.log(mergeTwoSortedLists(list1, list2));
+
+// other solutions
+
+// with recursion https://leetcode.com/problems/merge-two-sorted-lists/solutions/2705782/js-recursion-with-exlanation/
+// with loop https://leetcode.com/problems/merge-two-sorted-lists/solutions/9963/simple-javascript-solution/
