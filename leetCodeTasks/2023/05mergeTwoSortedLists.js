@@ -20,28 +20,48 @@ class ListNode {
  * @return {ListNode}
  */
 
-var mergeTwoLists = function (list1, list2) {
-  console.log(list1);
-  console.log(list2);
-  const nextInList1 = list1.next;
-  const nextInList2 = list2.next;
-    // if(list1.val < list2.val) {
-
-    // }
-
-    if(list2.val > list1.val) {
-        list
+var mergeTwoSortedLists = function (list1, list2) {
+  let current1 = list1;
+  let current2 = list2;
+  let sorted = [];
+  let newList = null;
+  while (current1 !== null) {
+    if (current2 === null || current1.val <= current2.val) {
+      sorted.push(current1.val);
+      current1 = current1.next;
+      continue;
     }
+    if (current2.val < current1.val) {
+      sorted.push(current2.val);
+      current2 = current2.next;
+      continue;
+    }
+  }
 
-  //   console.log(list1.next.val);
+  while (current2 !== null) {
+    sorted.push(current2.val);
+    current2 = current2.next;
+  }
+
+  for (let i = sorted.length - 1; i >= 0; i--) {
+    const value = sorted[i];
+    newList = {
+      val: value,
+      next: newList,
+    };
+  }
+
+  return newList;
 };
 
-const list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
-const list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+// const list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
+// const list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
 
-// const list1 = new ListNode(5, new ListNode(10, new ListNode(15)));
+const list1 = new ListNode(5, new ListNode(10, new ListNode(15)));
+// const list1 = new ListNode(5, new ListNode(10));
 // const list2 = new ListNode(2, new ListNode(3, new ListNode(20)));
+const list2 = new ListNode(2, new ListNode(3));
 
-console.log(mergeTwoLists(list1, list2));
-// console.log(mergeTwoLists([], []));
-// console.log(mergeTwoLists([], [0])),
+// console.log(mergeTwoSortedLists(new ListNode(), new ListNode(0)));
+// console.log(mergeTwoSortedLists([], [0]));
+console.log(mergeTwoSortedLists(list1, list2));
