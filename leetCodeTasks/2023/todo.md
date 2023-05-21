@@ -1,8 +1,10 @@
 danas: 20.05.2023
-[+] vidi kako memoizirati rekurziju
-[+] odi dalje sa listom i izbacivanje ponavljajucih elemenata
 [] pogledaj rijesenje od squarea
-[] opet probaj skuziti mergeTwoSortedLists. zbog reference prolazi to rijesenje ali opet ne mogu shvatiti kako.
+
+pocni kombinirat - imas jedan tezak a to je po stupcu difficulty
+kada zapnes na njemu uzmi si jedan iz stupca acceptance koji ima
+visoku prolaznost tako da nisi previse spor i da imas osjecaj napredka
+rjesavanja algoritama
 
 idi dalje
 [] 16. binary tree traversal problem
