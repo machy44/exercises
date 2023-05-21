@@ -19,16 +19,20 @@ class ListNode {
  * @return {ListNode}
  */
 var deleteDuplicates = function (head) {
+  //because of testcase in leetcode
+  if (head === null) return null;
   let current = head;
+  let next = head.next;
 
-  while (head.next !== null) {
-    // console.log(head.next);
-    if (head.val !== head.next.val) {
-      head = head.next;
+  while (next !== null) {
+    if (current.val === next.val) {
+      current.next = next.next;
+    } else {
+      current = current.next;
     }
-    head = head.next;
+    next = next.next;
   }
-  return current.next;
+  return head;
 };
 
 const first = new ListNode(1, new ListNode(1, new ListNode(2, null)));
