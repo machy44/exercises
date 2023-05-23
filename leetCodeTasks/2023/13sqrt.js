@@ -8,6 +8,7 @@
 // 1. prime number factorization
 // 2. long division method
 // 3. repeated substraction - this mthod works only for perfect square numbers.
+// https://www.cuemath.com/algebra/square-root-1-to-100/
 var mySqrt = function (x) {
   var left = 1;
   var right = Math.floor(x / 2) + 1;
@@ -28,5 +29,6 @@ var mySqrt = function (x) {
   return right;
 };
 
-console.log(mySqrt(4));
-console.log(mySqrt(8));
+// console.log(mySqrt(4));
+// console.log(mySqrt(8));
+console.log(mySqrt(10));
