@@ -1,6 +1,3 @@
-danas: 20.05.2023
-[] pogledaj rijesenje od squarea
-
 pocni kombinirat - imas jedan tezak a to je po stupcu difficulty
 kada zapnes na njemu uzmi si jedan iz stupca acceptance koji ima
 visoku prolaznost tako da nisi previse spor i da imas osjecaj napredka
