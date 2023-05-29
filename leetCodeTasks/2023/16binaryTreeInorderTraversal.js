@@ -16,19 +16,39 @@ class TreeNode {
 // 2. preorder traversal
 // 3. postorder traversal
 
-// recursive
-var inorderTraversal = function (root, temp = []) {
-  if (!root) {
-    return;
+// recursive - solution
+// var inorderTraversal = function (root, temp = []) {
+//   if (!root) {
+//     return;
+//   }
+
+//   inorderTraversal(root.left, temp);
+
+//   temp.push(root.val);
+
+//   inorderTraversal(root.right, temp);
+
+//   return temp;
+// };
+
+// iterative
+var inorderTraversal = function (root) {
+  let curr = root;
+  let stack = [];
+  let output = [];
+
+  while (curr !== null || stack.length > 0) {
+    if (curr !== null) {
+      stack.push(curr);
+      curr = curr.left;
+    } else {
+      curr = stack.pop();
+      output.push(curr.val);
+      curr = curr.right;
+    }
   }
 
-  inorderTraversal(root.left, temp);
-
-  temp.push(root.val);
-
-  inorderTraversal(root.right, temp);
-
-  return temp;
+  return output;
 };
 
 const binTree2 = new TreeNode(1, undefined, new TreeNode(2, new TreeNode(3)));
@@ -43,8 +63,5 @@ root.right = new TreeNode(3);
 root.left.left = new TreeNode(4);
 root.left.right = new TreeNode(5);
 
-console.log(inorderTraversal(binTree));
+// console.log(inorderTraversal(binTree));
 console.log(inorderTraversal(root));
-
-// iterative
-// var inorderTraversal = function (root) {};

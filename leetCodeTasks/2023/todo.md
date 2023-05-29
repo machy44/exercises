@@ -4,9 +4,8 @@ visoku prolaznost tako da nisi previse spor i da imas osjecaj napredka
 rjesavanja algoritama
 
 idi dalje
-[+] 16. binary tree traversal problem rekurzija
-[] 16. binary tree traversal problem probaj iterativno rijesit
 [] 17. merge sorted array
+[] 21. curry
 
 [] cijelo vrijeme idi dalje pa ces nekad skuziti mergeTwoSortedLists kako radi. Svako toliko pogledaj ali nemoj
 dozvoliti da ne ides dalje sa taskovima jer rekurziju bas ne kuzis u mergeTwoSortedLists zadatku
