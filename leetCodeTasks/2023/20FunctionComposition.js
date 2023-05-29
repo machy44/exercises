@@ -5,10 +5,13 @@
  * @return {Function}
  */
 var compose = function (functions) {
-  return function (x) {};
+  return function (x) {
+    return functions.reduceRight((result, fn) => {
+      console.log({ result });
+      return fn(result);
+    }, x);
+  };
 };
 
-/**
- * const fn = compose([x => x + 1, x => 2 * x])
- * fn(4) // 9
- */
+const fn = compose([(x) => x + 1, (x) => 2 * x]);
+console.log(fn(4)); // 9
