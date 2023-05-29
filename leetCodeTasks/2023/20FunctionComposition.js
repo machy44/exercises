@@ -7,7 +7,6 @@
 var compose = function (functions) {
   return function (x) {
     return functions.reduceRight((result, fn) => {
-      console.log({ result });
       return fn(result);
     }, x);
   };
