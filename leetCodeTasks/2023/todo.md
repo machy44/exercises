@@ -5,7 +5,9 @@ rjesavanja algoritama
 
 idi dalje
 [] 17. merge sorted array
-[] 21. curry
+[+] 21. curry
+[] 22. same tree
+[] 23 design hash set
 
 [] cijelo vrijeme idi dalje pa ces nekad skuziti mergeTwoSortedLists kako radi. Svako toliko pogledaj ali nemoj
 dozvoliti da ne ides dalje sa taskovima jer rekurziju bas ne kuzis u mergeTwoSortedLists zadatku
