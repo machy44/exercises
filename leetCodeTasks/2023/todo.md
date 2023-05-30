@@ -4,8 +4,8 @@ visoku prolaznost tako da nisi previse spor i da imas osjecaj napredka
 rjesavanja algoritama
 
 idi dalje
-[] 17. merge sorted array
 [+] 21. curry
+[] 17. merge sorted array
 [] 22. same tree
 [] 23 design hash set
 
