@@ -5,7 +5,7 @@ rjesavanja algoritama
 
 idi dalje
 [+] 21. curry
-[] 17. merge sorted array
+[+] 17. merge sorted array
 [] 22. same tree
 [] 23 design hash set
 
