@@ -13,7 +13,6 @@ function TreeNode(val, left, right) {
  * @return {boolean}
  */
 // recursion
-
 const traverse = (p, arr = [], leaf) => {
   if (!p) {
     arr.push(p);
@@ -38,6 +37,8 @@ var isSameTree = function (p, q) {
 
   return arr1.toString() === arr2.toString();
 };
+
+// TODO: iteration
 
 // const treeNode1 = new TreeNode(1);
 // treeNode1.left = new TreeNode(2);
