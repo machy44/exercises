@@ -38,6 +38,8 @@ var isSameTree = function (p, q) {
   return arr1.toString() === arr2.toString();
 };
 
+// I like this solution https://leetcode.com/problems/same-tree/solutions/32935/javascript-solution/
+
 // TODO: iteration
 
 // const treeNode1 = new TreeNode(1);
