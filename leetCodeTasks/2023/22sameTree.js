@@ -13,34 +13,35 @@ function TreeNode(val, left, right) {
  * @return {boolean}
  */
 // recursion
-const traverse = (p, arr = [], leaf) => {
-  if (!p) {
-    arr.push(p);
-    return p;
-  }
+// const traverse = (p, arr = [], leaf) => {
+//   if (!p) {
+//     arr.push(p);
+//     return p;
+//   }
 
-  arr.push(p.val + (leaf || ''));
-  traverse(p.left, arr, 'l');
-  traverse(p.right, arr, 'r');
-  return arr;
-};
-var isSameTree = function (p, q) {
-  const arr1 = traverse(p);
-  const arr2 = traverse(q);
+//   arr.push(p.val + (leaf || ''));
+//   traverse(p.left, arr, 'l');
+//   traverse(p.right, arr, 'r');
+//   return arr;
+// };
+// var isSameTree = function (p, q) {
+//   const arr1 = traverse(p);
+//   const arr2 = traverse(q);
 
-  console.log({ arr1 });
-  console.log({ arr2 });
+//   if (!arr1 || !arr2) {
+//     return arr1 === arr2;
+//   }
 
-  if (!arr1 || !arr2) {
-    return arr1 === arr2;
-  }
-
-  return arr1.toString() === arr2.toString();
-};
+//   return arr1.toString() === arr2.toString();
+// };
 
 // I like this solution https://leetcode.com/problems/same-tree/solutions/32935/javascript-solution/
 
 // TODO: iteration
+
+const isSameTree = function (p, q) {
+  console.log({ p });
+};
 
 // const treeNode1 = new TreeNode(1);
 // treeNode1.left = new TreeNode(2);
