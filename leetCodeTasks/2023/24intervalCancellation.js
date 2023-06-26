@@ -1,5 +1,5 @@
-const { performance } = require('perf_hooks');
 // https://leetcode.com/problems/interval-cancellation/
+const { performance } = require('perf_hooks');
 
 /**
  * @param {Function} fn
