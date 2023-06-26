@@ -4,7 +4,7 @@ visoku prolaznost tako da nisi previse spor i da imas osjecaj napredka
 rjesavanja algoritama
 
 idi dalje
-[] 24 intervalCancelation - easy
+[+] 24 intervalCancelation - easy
 [] 25 infinite method object - high acceptance
 [] 26 reverse print linked list - high acceptance
 
