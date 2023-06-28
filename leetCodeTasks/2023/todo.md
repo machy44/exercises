@@ -7,7 +7,7 @@ idi dalje
 [+] 24 intervalCancelation - easy
 [+] 25 infinite method object - high acceptance
 [] 26 reverse print linked list - high acceptance
-[] 27 symetric tree - easy https://leetcode.com/problems/symmetric-tree/
+[] 27 symmetric tree - easy
 
 additional:
 [] 22 same tree - with iteration
