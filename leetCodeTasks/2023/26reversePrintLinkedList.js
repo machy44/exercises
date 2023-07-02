@@ -20,4 +20,13 @@
  * @param {ImmutableListNode} head
  * @return {void}
  */
+// recursion
+var printLinkedListInReverse = function (head) {
+  if (head) {
+    printLinkedListInReverse(head.getNext());
+    head.printValue();
+  }
+};
+
+// with iteration
 var printLinkedListInReverse = function (head) {};
