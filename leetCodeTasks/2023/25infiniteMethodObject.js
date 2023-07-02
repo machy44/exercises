@@ -1,5 +1,8 @@
 // https://leetcode.com/problems/infinite-method-object/
 
+// TODO: article I should read
+// https://codeburst.io/understanding-javascript-proxies-by-examining-on-change-library-f252eddf76c2
+
 /**
  * @return {Object}
  */
