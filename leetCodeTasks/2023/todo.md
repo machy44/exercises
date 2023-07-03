@@ -6,8 +6,9 @@ rjesavanja algoritama
 idi dalje
 [+] 24 intervalCancelation - easy
 [+] 25 infinite method object - high acceptance
-[] 26 reverse print linked list - high acceptance
+[+] 26 reverse print linked list - high acceptance
 [] 27 symmetric tree - easy
+[] 28 reverse linked list - easy
 
 additional:
 [] 22 same tree - with iteration
