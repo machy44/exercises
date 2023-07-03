@@ -29,4 +29,13 @@ var printLinkedListInReverse = function (head) {
 };
 
 // with iteration
-var printLinkedListInReverse = function (head) {};
+var printLinkedListInReverse = function (head) {
+  let prints = [];
+  while (head) {
+    prints.unshift(head.printValue);
+    head = head.getNext();
+  }
+  prints.forEach((print) => {
+    print();
+  });
+};
