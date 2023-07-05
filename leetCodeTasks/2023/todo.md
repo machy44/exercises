@@ -8,7 +8,9 @@ idi dalje
 [+] 25 infinite method object - high acceptance
 [+] 26 reverse print linked list - high acceptance
 [] 27 symmetric tree - easy
-[] 28 reverse linked list - easy
+[+] 28 reverse linked list - easy
+[] 29 next day - high acceptance
+[] 30 bind function to context - hih acceptance
 
 additional:
 [] 22 same tree - with iteration
