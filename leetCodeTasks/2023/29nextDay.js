@@ -7,3 +7,6 @@ Date.prototype.nextDay = function () {
 
 const date = new Date('2014-06-20');
 console.log(date.nextDay()); // "2014-06-21"
+
+// similar to mine solution but uses getTime() instead of valueOf
+// https://leetcode.com/problems/next-day/solutions/3703647/easy-peasy/
