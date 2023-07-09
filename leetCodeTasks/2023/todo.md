@@ -9,12 +9,11 @@ idi dalje
 [+] 26 reverse print linked list - high acceptance
 [] 27 symmetric tree - easy
 [+] 28 reverse linked list - easy
-[] 29 next day - high acceptance
-[] 30 bind function to context - hih acceptance
+[+] 29 next day - high acceptance
+[+] 30 bind function to context - hih acceptance
 
-additional:
+additional todos:
 [] 22 same tree - with iteration
 [] 23 design hash set but with linked list like it is solved in editorial https://leetcode.com/problems/design-hashset/editorial/
-
-[] cijelo vrijeme idi dalje pa ces nekad skuziti mergeTwoSortedLists kako radi. Svako toliko pogledaj ali nemoj
+[] 05 cijelo vrijeme idi dalje pa ces nekad skuziti mergeTwoSortedLists kako radi. Svako toliko pogledaj ali nemoj
 dozvoliti da ne ides dalje sa taskovima jer rekurziju bas ne kuzis u mergeTwoSortedLists zadatku
