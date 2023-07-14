@@ -4,19 +4,21 @@
  * @param {Object} obj
  * @return {Function}
  */
-// Function.prototype.bindPolyfill = function (obj) {
-//   let that = this;
-//   return function (...args) {
-//     function TempNewContextFunction() {}
-//     TempNewContextFunction.prototype.fn = that;
+Function.prototype.bindPolyfill = function (obj) {
+  let that = this;
+  return function (...args) {
+    function TempNewContextFunction() {}
+    TempNewContextFunction.prototype.fn = that;
 
-//     const newContext = Object.assign(new TempNewContextFunction(), obj);
+    const newContext = Object.assign(new TempNewContextFunction(), obj);
 
-//     console.log(TempNewContextFunction.prototype);
+    console.log(newContext);
 
-//     return newContext.fn(...args);
-//   };
-// };
+    return newContext.fn(...args);
+  };
+};
+
+// nice article https://javascript.plainenglish.io/writing-polyfills-for-call-apply-and-bind-methods-in-javascript-13b4ba313273
 
 // solution using call
 // Function.prototype.bindPolyfill = function (obj) {
@@ -49,15 +51,15 @@
 // there is an issue because this has a lot of other props
 // which will be joined together by keys function. Thats why this
 // approach wont work
-Function.prototype.bindPolyfill = function (obj) {
-  let that = this;
-  return function (...args) {
-    const key = Object.keys(obj)[0];
+// Function.prototype.bindPolyfill = function (obj) {
+//   let that = this;
+//   return function (...args) {
+//     const key = Object.keys(obj)[0];
 
-    this[key] = obj[key];
-    return that(...args);
-  };
-};
+//     this[key] = obj[key];
+//     return that(...args);
+//   };
+// };
 
 function keys() {
   return Object.keys(this).join(',');

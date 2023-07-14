@@ -11,6 +11,7 @@ idi dalje
 [+] 28 reverse linked list - easy
 [+] 29 next day - high acceptance
 [+] 30 bind function to context - hih acceptance
+[]  take a look if bindPoluFill 30 first solution will really work with this and not with that I used 
 
 additional todos:
 [] 22 same tree - with iteration
