@@ -7,11 +7,14 @@ idi dalje
 [+] 24 intervalCancelation - easy
 [+] 25 infinite method object - high acceptance
 [+] 26 reverse print linked list - high acceptance
-[] 27 symmetric tree - easy
 [+] 28 reverse linked list - easy
 [+] 29 next day - high acceptance
 [+] 30 bind function to context - hih acceptance
-[]  take a look if bindPoluFill 30 first solution will really work with this and not with that I used 
+[+] take a look if bindPoluFill 30 first solution will really work with this and not with that I used
+[] 27 symmetric tree - easy
+[] 31 convert callback to promise - high acceptance
+[] 32 https://leetcode.com/problems/maximum-depth-of-binary-tree/ - easy
+[] 33 https://leetcode.com/problems/date-range-generator/ - high acceptance
 
 additional todos:
 [] 22 same tree - with iteration
