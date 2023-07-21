@@ -37,3 +37,5 @@ const example2 = (callback, a, b, c) => {
 const promisifed1 = promisify(example2);
 
 promisifed1(1, 2, 3).then(console.log);
+
+// dont quite understand this solution https://leetcode.com/problems/convert-callback-based-function-to-promise-based-function/solutions/3781188/simple-solution/
