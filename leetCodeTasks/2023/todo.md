@@ -1,7 +1,9 @@
 pocni kombinirat - imas jedan tezak a to je po stupcu difficulty
 kada zapnes na njemu uzmi si jedan iz stupca acceptance koji ima
 visoku prolaznost tako da nisi previse spor i da imas osjecaj napredka
-rjesavanja algoritama
+rjesavanja algoritama.
+22.07.2023
+takodjer sam skuzio da postoji frequency koji moram pocet ubacivati isto
 
 idi dalje
 [] 27 symmetric tree iteration
