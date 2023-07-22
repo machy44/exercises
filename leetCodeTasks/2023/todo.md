@@ -12,13 +12,17 @@ idi dalje
 [+] 30 bind function to context - hih acceptance
 [+] take a look if bindPoluFill 30 first solution will really work with this and not with that I used
 [+] 27 symmetric tree - easy -> recursion
+[+] 31 convert callback to promise - high acceptance
+[] 32 fizzbuzz - high frequency
+[] 33 promise pool - high frequency
+[] 34 PRomise time limit - easy
+[] 35 add two promises
+[] 05 cijelo vrijeme idi dalje pa ces nekad skuziti mergeTwoSortedLists kako radi. Svako toliko pogledaj ali nemoj
+dozvoliti da ne ides dalje sa taskovima jer rekurziju bas ne kuzis u mergeTwoSortedLists zadatku
 [] 27 symmetric tree iteration
-[] 31 convert callback to promise - high acceptance
-[] 32 https://leetcode.com/problems/maximum-depth-of-binary-tree/ - easy
-[] 33 https://leetcode.com/problems/date-range-generator/ - high acceptance
+[] 36 https://leetcode.com/problems/maximum-depth-of-binary-tree/ - easy
+[] 37 https://leetcode.com/problems/date-range-generator/ - high acceptance
 
 additional todos:
 [] 22 same tree - with iteration
 [] 23 design hash set but with linked list like it is solved in editorial https://leetcode.com/problems/design-hashset/editorial/
-[] 05 cijelo vrijeme idi dalje pa ces nekad skuziti mergeTwoSortedLists kako radi. Svako toliko pogledaj ali nemoj
-dozvoliti da ne ides dalje sa taskovima jer rekurziju bas ne kuzis u mergeTwoSortedLists zadatku
