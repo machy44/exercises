@@ -11,8 +11,18 @@ idi dalje
 [] 36 https://leetcode.com/problems/maximum-depth-of-binary-tree/ - easy
 [] 37 https://leetcode.com/problems/date-range-generator/ - high acceptance
 
-- liste i stabla ti slabo idu. Rijesavaj zadatke sa listama i stablima
-
 additional todos:
 [] 22 same tree - with iteration
 [] 23 design hash set but with linked list like it is solved in editorial https://leetcode.com/problems/design-hashset/editorial/
+
+- liste i stabla ti slabo idu. Rijesavaj zadatke sa listama i stablima. grafove isto. te stvari ti ne idu
+
+https://leetcode.com/tag/graph/ - odaberi easy
+
+znaci mozes birat po tagovima
+
+![tags](leetCodeTasks\2023\Screenshot 2023-07-22 225909.png)
+
+ili mozes algoritme
+
+![algorithms](leetCodeTasks\2023\Screenshot 2023-07-22 230019.png)
