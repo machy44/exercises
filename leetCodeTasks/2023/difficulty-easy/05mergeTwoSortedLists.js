@@ -55,39 +55,70 @@ var mergeTwoSortedLists = function (list1, list2) {
   return newList;
 };
 
-// second way without currents and sorted array
-var mergeTwoLists = function (list1, list2) {
-  let newList = { val: -1, next: {} };
-  let current = newList;
-  while (list1 !== null && list2 !== null) {
-    if (list1.val <= list2.val) {
-      current.next = list1;
-      list1 = list1.next;
-    } else {
-      current.next = list2;
-      list2 = list2.next;
-    }
-    current = current.next;
+// // second way without currents and sorted array
+// var mergeTwoLists = function (list1, list2) {
+//   let newList = { val: -1, next: {} };
+//   let current = newList;
+//   while (list1 !== null && list2 !== null) {
+//     if (list1.val <= list2.val) {
+//       current.next = list1;
+//       list1 = list1.next;
+//     } else {
+//       current.next = list2;
+//       list2 = list2.next;
+
+//     }
+//     current = current.next;
+//   }
+
+//   current.next = list1 || list2;
+
+//   return newList.next;
+// };
+
+// // recursion way
+// var mergeTwoLists = function (list1, list2) {
+//   if (list1 === null) return list2;
+//   if (list2 === null) return list1;
+//   if (list1.val <= list2.val) {
+//     list1.next = mergeTwoLists(list1.next, list2);
+//     return list1;
+//   } else {
+//     list2.next = mergeTwoLists(list1, list2.next);
+//     return list2;
+//   }
+// };
+
+function mergeTwoLists(list1, list2) {
+  if (!list1 || !list2) return list1 || list2;
+
+  let head;
+
+  if (list1.val < list2.val) {
+    head = list1;
+    head.next = mergeTwoLists(list1.next, list2);
+  } else {
+    head = list2;
+    head.next = mergeTwoLists(list1, list2.next);
   }
 
-  current.next = list1 || list2;
+  return head;
+}
 
-  return newList.next;
-};
-
-// recursion way
-
-// const list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
-// const list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+const list1 = new ListNode(1, new ListNode(3, new ListNode(4)));
+const list2 = new ListNode(1, new ListNode(2, new ListNode(4)));
 
 // const list1 = new ListNode(5, new ListNode(10, new ListNode(15)));
-const list1 = new ListNode(5, new ListNode(10));
-const list2 = new ListNode(2, new ListNode(3, new ListNode(20)));
+// const list1 = new ListNode(5, new ListNode(10));
+// const list2 = new ListNode(2, new ListNode(3, new ListNode(20)));
 // const list2 = new ListNode(2, new ListNode(3));
 
 // console.log(mergeTwoSortedLists(new ListNode(), new ListNode(0)));
 // console.log(mergeTwoSortedLists([], [0]));
-console.log(mergeTwoLists(list1, list2));
+let test = mergeTwoSortedLists(list1, list2);
+console.log(list1);
+console.log(list2);
+console.log(JSON.stringify(test));
 
 // other solutions
 
