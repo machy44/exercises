@@ -55,6 +55,7 @@ var mergeTwoSortedLists = function (list1, list2) {
   return newList;
 };
 
+// iterative approach has better space complexity. What I realize in editorial video he mentioned time complexity and space complexity;
 // // second way without currents and sorted array
 // var mergeTwoLists = function (list1, list2) {
 //   let newList = { val: -1, next: {} };
@@ -115,10 +116,10 @@ const list2 = new ListNode(1, new ListNode(2, new ListNode(4)));
 
 // console.log(mergeTwoSortedLists(new ListNode(), new ListNode(0)));
 // console.log(mergeTwoSortedLists([], [0]));
-let test = mergeTwoSortedLists(list1, list2);
+// let test = mergeTwoSortedLists(list1, list2);
 console.log(list1);
 console.log(list2);
-console.log(JSON.stringify(test));
+// console.log(JSON.stringify(test));
 
 // other solutions
 

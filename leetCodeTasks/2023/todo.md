@@ -4,27 +4,14 @@ visoku prolaznost tako da nisi previse spor i da imas osjecaj napredka
 rjesavanja algoritama
 
 idi dalje
-[+] 24 intervalCancelation - easy
-[+] 25 infinite method object - high acceptance
-[+] 26 reverse print linked list - high acceptance
-[+] 28 reverse linked list - easy
-[+] 29 next day - high acceptance
-[+] 30 bind function to context - hih acceptance
-[+] take a look if bindPoluFill 30 first solution will really work with this and not with that I used
-[+] 27 symmetric tree - easy -> recursion
-[+] 31 convert callback to promise - high acceptance
-[] 32 fizzbuzz - high frequency
-[] 05 cijelo vrijeme idi dalje pa ces nekad skuziti mergeTwoSortedLists kako radi. Svako toliko pogledaj ali nemoj
-dozvoliti da ne ides dalje sa taskovima jer rekurziju bas ne kuzis u mergeTwoSortedLists zadatku
 [] 27 symmetric tree iteration
-
-
 [] 33 promise pool - high frequency
 [] 34 PRomise time limit - easy
 [] 35 add two promises
-
 [] 36 https://leetcode.com/problems/maximum-depth-of-binary-tree/ - easy
 [] 37 https://leetcode.com/problems/date-range-generator/ - high acceptance
+
+- liste i stabla ti slabo idu. Rijesavaj zadatke sa listama i stablima
 
 additional todos:
 [] 22 same tree - with iteration
