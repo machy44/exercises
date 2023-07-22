@@ -14,12 +14,15 @@ idi dalje
 [+] 27 symmetric tree - easy -> recursion
 [+] 31 convert callback to promise - high acceptance
 [] 32 fizzbuzz - high frequency
-[] 33 promise pool - high frequency
-[] 34 PRomise time limit - easy
-[] 35 add two promises
 [] 05 cijelo vrijeme idi dalje pa ces nekad skuziti mergeTwoSortedLists kako radi. Svako toliko pogledaj ali nemoj
 dozvoliti da ne ides dalje sa taskovima jer rekurziju bas ne kuzis u mergeTwoSortedLists zadatku
 [] 27 symmetric tree iteration
+
+
+[] 33 promise pool - high frequency
+[] 34 PRomise time limit - easy
+[] 35 add two promises
+
 [] 36 https://leetcode.com/problems/maximum-depth-of-binary-tree/ - easy
 [] 37 https://leetcode.com/problems/date-range-generator/ - high acceptance
 
