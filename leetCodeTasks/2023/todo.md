@@ -8,6 +8,7 @@ takodjer sam skuzio da postoji frequency koji moram pocet ubacivati isto
 idi dalje
 [] 27 symmetric tree iteration
 [] 33 promise pool - high frequency
+
 [] 34 PRomise time limit - easy
 [] 35 add two promises
 [] 36 https://leetcode.com/problems/maximum-depth-of-binary-tree/ - easy
