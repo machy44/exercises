@@ -10,10 +10,11 @@ idi dalje
 [] 33 promise pool - high frequency
 
 [] 34 PRomise time limit - easy
-[] 35 add two promises
+[+] 35 add two promises
 [] 36 https://leetcode.com/problems/maximum-depth-of-binary-tree/ - easy
 [] 37 https://leetcode.com/problems/date-range-generator/ - high acceptance
-
+[] 38 sleep
+ 
 additional todos:
 [] 22 same tree - with iteration
 [] 23 design hash set but with linked list like it is solved in editorial https://leetcode.com/problems/design-hashset/editorial/
