@@ -60,3 +60,9 @@ String(obj2); // "[3,4]"
 //     return str;
 //   }
 // }
+
+// and with template literal you could also resolve
+
+// ArrayWrapper.prototype.toString = function() {
+//   return `[${this.nums.join(',')}]`;
+// }
