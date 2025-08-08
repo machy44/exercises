@@ -9,10 +9,10 @@ var createCounter = function (init) {
 
   return {
     increment: () => {
-      return countingValue += 1;
+      return ++countingValue;
     },
     decrement: () => {
-      return countingValue -= 1;
+      return --countingValue;
     },
     reset: () => {
       countingValue = init;
