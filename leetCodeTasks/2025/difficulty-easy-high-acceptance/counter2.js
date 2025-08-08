@@ -4,21 +4,56 @@
  * @param {integer} init
  * @return { increment: Function, decrement: Function, reset: Function }
  */
-var createCounter = function (init) {
-  let countingValue = init;
+// var createCounter = function (init) {
+//   let countingValue = init;
 
-  return {
-    increment: () => {
-      return ++countingValue;
-    },
-    decrement: () => {
-      return --countingValue;
-    },
-    reset: () => {
-      countingValue = init;
-      return init;
-    },
-  };
+//   return {
+//     increment: () => {
+//       return ++countingValue;
+//     },
+//     decrement: () => {
+//       return --countingValue;
+//     },
+//     reset: () => {
+//       countingValue = init;
+//       return init;
+//     },
+//   };
+// };
+
+
+// const counter = createCounter(5);
+
+// console.log(counter.increment());  // 6
+// console.log(counter.reset());// 5
+// console.log(counter.decrement()); // 4
+
+
+// class solution
+
+class Counter {
+  constructor(init) {
+    this.init = init;
+    this.counterValue = init;
+  }
+
+  increment() {
+    return ++this.counterValue
+  }
+
+  decrement() {
+    return --this.counterValue
+  }
+
+  reset() {
+    return this.counterValue = this.init;
+  }
+
+}
+
+
+var createCounter = function (init) {
+   return new Counter(init)
 };
 
 
@@ -27,3 +62,5 @@ const counter = createCounter(5);
 console.log(counter.increment());  // 6
 console.log(counter.reset());// 5
 console.log(counter.decrement()); // 4
+
+
