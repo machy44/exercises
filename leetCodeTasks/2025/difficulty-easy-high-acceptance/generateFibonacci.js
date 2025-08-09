@@ -33,22 +33,36 @@
 
 // count cant be send as argument
 
+// var fibGenerator = function* () {
+//   let i = 0;
+//   let sequence = [0, 1];
+
+//   while (true) {
+//     if (i === 0) {
+//       yield 0;
+//       i++;
+//     } else if (i === 1) {
+//       yield 1;
+//       i++;
+//     } else {
+//       sequence.push(sequence[i - 2] + sequence[i - 1]);
+//       yield sequence[i];
+//       i++;
+//     }
+//   }
+// };
+
+// third solution without array;
+
 var fibGenerator = function* () {
-  let i = 0;
-  let sequence = [0, 1];
+  let prev = 0;
+  let now = 1
 
   while (true) {
-    if (i === 0) {
-      yield 0;
-      i++;
-    } else if (i === 1) {
-      yield 1;
-      i++;
-    } else {
-      sequence.push(sequence[i - 2] + sequence[i - 1]);
-      yield sequence[i];
-      i++;
-    }
+    yield prev;
+    let temp = now;
+    now = prev + now;
+    prev = temp;
   }
 };
 
