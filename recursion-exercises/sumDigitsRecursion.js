@@ -29,13 +29,17 @@
 
 // sumDigits with recursion
 
-const sumDigits = (number) => {
-  // Base case: single-digit number
-  if (number < 10) return number;
-  let sum = number % 10 + sumDigits(Math.floor(number / 10));
-  return sum;
-};
+// const sumDigits = (number) => {
+//   // Base case: single-digit number
+//   if (number < 10) return number;
+//   let sum = number % 10 + sumDigits(Math.floor(number / 10));
+//   return sum;
+// };
 
-// console.log(sumDigits(1234)); // → 10  (1 + 2 + 3 + 4)
-// console.log(sumDigits(9));    // → 9
-console.log(sumDigits(2025)); // → 9  (2 + 0 + 2 + 5)
+// // console.log(sumDigits(1234)); // → 10  (1 + 2 + 3 + 4)
+// // console.log(sumDigits(9));    // → 9
+// console.log(sumDigits(2025)); // → 9  (2 + 0 + 2 + 5)
+
+
+
+
