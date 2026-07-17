@@ -12,6 +12,7 @@
  * @param {TreeNode} root
  * @return {number}
  */
+// this is depth-first traversal solution
 var maxDepth = function (root) {
     
   if(root === null) return 0;
@@ -44,3 +45,5 @@ console.log(maxDepth({
 }));
 // console.log(maxDepth({ val: 5, left: null, right: null }));
 // console.log(maxDepth([1,null,2]))
+
+//TODO:  breadth-first traversal solution provide here
