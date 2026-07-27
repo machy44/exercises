@@ -12,9 +12,12 @@
  * @return {boolean}
  */
 
-// TODO: implement with slow/fast (tortoise & hare) pointers // Floyd’s cycle-finding algorithm
+// TODO: recursive approach
+
+// implement with slow/fast (tortoise & hare) pointers // Floyd’s cycle-finding algorithm
 // This algorithm is used to find a loop in a linked list. 
 // It uses two pointers one moving twice as fast as the other one
+// iterative approach
 var hasCycle = function (head) {
   if (!head) return false;
   let slowPointer = head;
