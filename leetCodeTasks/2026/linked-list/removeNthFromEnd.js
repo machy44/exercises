@@ -10,10 +10,11 @@
  * @return {ListNode}
  */
 var removeNthFromEnd = function (head, n) {
-  
-  const dummy = head;
-  let fastPointer = head;
-  let slowPointer = head;
+
+  const dummy = new ListNode(0);
+  dummy.next = head;
+  let fastPointer = dummy;
+  let slowPointer = dummy;
 
   for (let i = 0; i < n; i++) {
     fastPointer = fastPointer.next;
@@ -28,7 +29,7 @@ var removeNthFromEnd = function (head, n) {
   slowPointer.next = slowPointer.next.next;
 
 
-  return dummy;
+  return dummy.next;
 };
 
 // --- test setup ---
