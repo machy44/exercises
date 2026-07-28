@@ -1,19 +1,34 @@
 // https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
 
-/**
- * Definition for singly-linked list.
- * function ListNode(val, next) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.next = (next===undefined ? null : next)
- * }
- */
+// TODO: recursion solution
+
+
+// implemented with two pointers - advance "fast" n steps ahead of "slow", then move both until fast hits the end
 /**
  * @param {ListNode} head
  * @param {number} n
  * @return {ListNode}
  */
 var removeNthFromEnd = function (head, n) {
-  // TODO: implement with two pointers - advance "fast" n steps ahead of "slow", then move both until fast hits the end
+  
+  const dummy = head;
+  let fastPointer = head;
+  let slowPointer = head;
+
+  for (let i = 0; i < n; i++) {
+    fastPointer = fastPointer.next;
+  }
+
+  while (fastPointer.next !== null) {
+    fastPointer = fastPointer.next;
+    slowPointer = slowPointer.next;
+  }
+
+
+  slowPointer.next = slowPointer.next.next;
+
+
+  return dummy;
 };
 
 // --- test setup ---
